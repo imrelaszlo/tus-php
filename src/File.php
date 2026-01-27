@@ -505,7 +505,7 @@ class File
         $status = @copy($source, $destination);
 
         if (false === $status) {
-            throw new FileException(sprintf('Cannot copy source (%s) to destination (%s).', $source, $destination));
+            throw new FileException(\sprintf('Cannot copy source (%s) to destination (%s).', $source, $destination));
         }
 
         return $status;
